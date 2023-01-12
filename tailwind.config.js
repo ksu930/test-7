@@ -10,9 +10,10 @@ module.exports = {
       colors: {
         primary: "#20d28c",
         beBlue: "#468cf0",
-        beGray: "#575757",
+        beGray: "#767676",
         beGray2: "#909090",
-        beLightGray: "#f4f4f4",
+        beGray3: "#eceff2",
+        beLightGray: "#21cb81",
         beRed: "#fa5a5a",
       },
     },
