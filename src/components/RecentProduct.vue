@@ -6,45 +6,47 @@
     >
       <div
         class="flex flex-col w-[150px] h-fit box-border"
-        v-for="(a, i) in data"
-        :key="a[i]"
+        v-for="(product, index) in product"
+        :key="product[index]"
       >
         <div class="w-[150px] h-[150px] rounded-md box-border">
           <img
             class="w-[150px] h-[150px] rounded-md box-border"
-            :src="a.image"
+            :src="product.image"
             alt="img"
           />
         </div>
         <div
           class="relative top-[-30px] right-[-120px] w-[20px] h-[0] box-border"
-          v-if="!a.like"
+          v-if="!product.isLike"
         >
           🤍
         </div>
 
         <div
           class="relative top-[-30px] right-[-120px] w-[20px] h-[0] box-border"
-          v-if="a.like"
+          v-if="product.isLike"
         >
           ❤️
         </div>
         <div class="mt-[8px]">
           <div class="text-xs tracking-[-0.3px] text-slate-400 box-border">
-            {{ a.title }}
+            {{ product.title }}
           </div>
           <div class="mt-[4px] text-xs tracking-[-0.3px] box-border">
-            {{ a.subtitle }}
+            {{ product.subTitle }}
           </div>
           <div
             class="flex flex-row gap-[4px] mt-[2px] text-sm tracking-[-0.3px] text-beGray2 box-border"
           >
-            <div class="font-bold text-beRed box-border">{{ a.discount }}</div>
-            <div>{{ a.afterprice }}</div>
+            <div class="font-bold text-beRed box-border">
+              {{ product.discount }}
+            </div>
+            <div>{{ product.afterPrice }}</div>
             <div
               class="font-bold text-[10px] text-beGray2 line-through box-border"
             >
-              {{ a.beforeprice }}
+              {{ product.beforePrice }}
             </div>
           </div>
           <div
@@ -77,7 +79,7 @@ export default {
   },
   data() {
     return {
-      data: data,
+      product: data,
     };
   },
 };
