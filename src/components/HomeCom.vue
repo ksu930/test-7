@@ -1,9 +1,17 @@
 <template>
-  <div>Home Component</div>
+  <div class="border-black border-2 w-[360px] h-full flex flex-col box-border">
+    <div class="my-auto">Home Component</div>
+    <FooterCom />
+  </div>
 </template>
 
 <script>
-export default {};
+import FooterCom from "./global/FooterCom.vue";
+export default {
+  components: {
+    FooterCom: FooterCom,
+  },
+};
 </script>
 
 <style></style>

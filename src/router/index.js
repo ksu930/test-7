@@ -4,6 +4,7 @@ import SearchCom from "../components/SearchCom.vue";
 import MallCom from "../components/MallCom.vue";
 import EventCom from "../components/EventCom.vue";
 import MyPageCom from "../components/MyPageCom.vue";
+import RecentProdut from "../components/RecentProduct.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: "/mypage",
       name: "mypage",
       component: MyPageCom,
+    },
+    {
+      path: "/recentproduct",
+      name: "recentproduct",
+      component: RecentProdut,
     },
   ],
 });
