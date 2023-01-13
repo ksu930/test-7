@@ -11,7 +11,7 @@
           subTitleClickState === 0 &&
           'font-bold text-beRed border-b-2 border-beRed box-border'
         "
-        @click="subTitleClickState = 0"
+        @click="onClickTab(0)"
       >
         홈
       </div>
@@ -21,7 +21,7 @@
           subTitleClickState === 1 &&
           'font-bold text-beRed border-b-2 border-beRed box-border'
         "
-        @click="subTitleClickState = 1"
+        @click="onClickTab(1)"
       >
         <div class="flex items-center h-full">한정수량</div>
         <img class="w-[18px] h-[18px]" src="../assets/new.webp" />
@@ -32,7 +32,7 @@
           subTitleClickState === 2 &&
           'font-bold text-beRed border-b-2 border-beRed box-border'
         "
-        @click="subTitleClickState = 2"
+        @click="onClickTab(2)"
       >
         출산가방
       </div>
@@ -42,7 +42,7 @@
           subTitleClickState === 3 &&
           'font-bold text-beRed border-b-2 border-beRed box-border'
         "
-        @click="subTitleClickState = 3"
+        @click="onClickTab(3)"
       >
         <div class="flex items-center h-full">혜택존</div>
         <img class="w-[18px] h-[18px]" src="../assets/new.webp" />
@@ -90,12 +90,19 @@ export default {
     return {
       subTitleClickState: 0,
       isTest: true,
+      swipeRef: null,
     };
   },
   methods: {
-    onSwiper(swiper) {},
+    onSwiper(swiper) {
+      this.swipeRef = swiper;
+    },
     onSlideChange(swiper) {
       this.subTitleClickState = swiper.activeIndex;
+    },
+    onClickTab(index) {
+      this.swipeRef?.slideTo(index, 200);
+      this.subTitleClickState = index;
     },
   },
 };
