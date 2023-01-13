@@ -4,22 +4,24 @@
   >
     <HeaderCom title="전체보기" />
 
-    <div class="flex w-full h-10 pl-5 box-border text-sm">
+    <div class="flex w-full h-10 pl-5 text-sm">
       <div
-        class="flex items-center px-2"
+        class="flex items-center px-2 border-b-2"
         :class="
-          subTitleClickState === 0 &&
-          'font-bold text-beRed border-b-2 border-beRed box-border'
+          subTitleClickState === 0
+            ? 'font-bold text-beRed border-b-2 border-beRed'
+            : 'border-transparent'
         "
         @click="onClickTab(0)"
       >
         홈
       </div>
       <div
-        class="flex items-center h-full px-2 gap-1"
+        class="flex items-center h-full px-2 gap-1 border-b-2"
         :class="
-          subTitleClickState === 1 &&
-          'font-bold text-beRed border-b-2 border-beRed box-border'
+          subTitleClickState === 1
+            ? 'font-bold text-beRed border-b-2 border-beRed'
+            : 'border-transparent'
         "
         @click="onClickTab(1)"
       >
@@ -27,20 +29,22 @@
         <img class="w-[18px] h-[18px]" src="../assets/new.webp" />
       </div>
       <div
-        class="flex items-center px-2"
+        class="flex items-center px-2 border-b-2"
         :class="
-          subTitleClickState === 2 &&
-          'font-bold text-beRed border-b-2 border-beRed box-border'
+          subTitleClickState === 2
+            ? 'font-bold text-beRed border-b-2 border-beRed'
+            : 'border-transparent'
         "
         @click="onClickTab(2)"
       >
         출산가방
       </div>
       <div
-        class="flex items-center px-2 gap-1"
+        class="flex items-center px-2 gap-1 border-b-2"
         :class="
-          subTitleClickState === 3 &&
-          'font-bold text-beRed border-b-2 border-beRed box-border'
+          subTitleClickState === 3
+            ? 'font-bold text-beRed border-b-2 border-beRed'
+            : 'border-transparent'
         "
         @click="onClickTab(3)"
       >
