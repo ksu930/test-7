@@ -8,8 +8,8 @@
     >
       <div
         class="flex flex-col w-[150px] h-fit box-border"
-        v-for="(product, index) in products"
-        :key="product[index]"
+        v-for="product in products"
+        :key="product.id"
       >
         <div class="w-[150px] h-[150px] rounded-md box-border">
           <img
@@ -28,7 +28,7 @@
 
         <div
           class="relative top-[-30px] right-[-120px] w-[20px] h-[0] box-border cursor-pointer"
-          v-if="product.isLike"
+          v-else
           @click="onLikeChange(product.id)"
         >
           ❤️
@@ -62,7 +62,7 @@
               무료배송
             </div>
             <div
-              class="flex justify-center w-[58px] h-[18px] rounded-md text-[10px] text-center text-beLightGray border-solid border-beLightGray border-[1px] tracking-[-0.3px] pt-[-6px] box-border"
+              class="flex justify-center w-[58px] h-[18px] rounded-md text-[10px] items-center text-beLightGray border-solid border-beLightGray border-[1px] tracking-[-0.3px] pt-[-6px] box-border"
             >
               조리원 전용
             </div>
@@ -88,7 +88,8 @@ export default {
   },
   methods: {
     onLikeChange(id) {
-      this.product[index].isLike = !this.product[index].isLike;
+      let index = this.products.findIndex((a) => a.id === id);
+      this.products[index].isLike = !this.products[index].isLike;
     },
   },
 };
