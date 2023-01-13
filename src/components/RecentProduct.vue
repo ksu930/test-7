@@ -1,7 +1,6 @@
 <template>
   <div class="border-gray-200 w-[360px] h-full flex flex-col box-border">
-    <HeaderCom />
-    <RouterView />
+    <HeaderCom title="최근 들어온 상품" />
 
     <div
       class="w-full h-full flex flex-row flex-wrap justify-between box-border p-[20px] gap-[20px]"
@@ -57,7 +56,7 @@
             class="flex flex-row gap-[4px] mt-[8px] text-sm tracking-[-0.3px] text-slate-400 box-border"
           >
             <div
-              class="flex justify-center w-[46px] h-[18px] text-[10px] text-beGray rounded-md bg-beGray3 tracking-[-0.3px] box-border"
+              class="flex justify-center w-[46px] h-[18px] text-[10px] text-beGray rounded-md items-center bg-beGray3 tracking-[-0.3px] box-border"
             >
               무료배송
             </div>
@@ -74,8 +73,8 @@
 </template>
 
 <script>
-import HeaderCom from "./global/HeaderCom.vue";
-import data from "../assets/data";
+import HeaderCom from './global/HeaderCom.vue';
+import data from '../assets/data';
 export default {
   components: {
     HeaderCom: HeaderCom,
@@ -88,8 +87,17 @@ export default {
   },
   methods: {
     onLikeChange(id) {
-      let index = this.products.findIndex((a) => a.id === id);
-      this.products[index].isLike = !this.products[index].isLike;
+      this.products.forEach((product) => {
+        if (product.id === id) {
+          product.isLike = !product.isLike;
+          return false;
+        }
+        let i = 1;
+        console.log(i);
+        i++;
+      });
+      // let index = this.products.findIndex((product) => product.id === id);
+      // this.products[index].isLike = !this.products[index].isLike;
     },
   },
 };
