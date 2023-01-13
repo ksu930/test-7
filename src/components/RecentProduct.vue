@@ -1,12 +1,14 @@
 <template>
   <div class="border-gray-200 w-[360px] h-full flex flex-col box-border">
     <HeaderCom />
+    <RouterView />
+
     <div
       class="w-full h-full flex flex-row flex-wrap justify-between box-border p-[20px] gap-[20px]"
     >
       <div
         class="flex flex-col w-[150px] h-fit box-border"
-        v-for="(product, index) in product"
+        v-for="(product, index) in products"
         :key="product[index]"
       >
         <div class="w-[150px] h-[150px] rounded-md box-border">
@@ -17,15 +19,17 @@
           />
         </div>
         <div
-          class="relative top-[-30px] right-[-120px] w-[20px] h-[0] box-border"
+          class="relative top-[-30px] right-[-120px] w-[20px] h-[0] box-border cursor-pointer"
           v-if="!product.isLike"
+          @click="onLikeChange(product.id)"
         >
           🤍
         </div>
 
         <div
-          class="relative top-[-30px] right-[-120px] w-[20px] h-[0] box-border"
+          class="relative top-[-30px] right-[-120px] w-[20px] h-[0] box-border cursor-pointer"
           v-if="product.isLike"
+          @click="onLikeChange(product.id)"
         >
           ❤️
         </div>
@@ -72,15 +76,20 @@
 <script>
 import HeaderCom from "./global/HeaderCom.vue";
 import data from "../assets/data";
-
 export default {
   components: {
     HeaderCom: HeaderCom,
   },
   data() {
     return {
-      product: data,
+      products: data,
+      isBoolean: true,
     };
+  },
+  methods: {
+    onLikeChange(id) {
+      this.product[index].isLike = !this.product[index].isLike;
+    },
   },
 };
 </script>
