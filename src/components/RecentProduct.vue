@@ -6,7 +6,7 @@
     >
       <div
         class="flex flex-col w-[150px] h-fit box-border"
-        v-for="(product, index) in product"
+        v-for="(product, index) in products"
         :key="product[index]"
       >
         <div class="w-[150px] h-[150px] rounded-md box-border">
@@ -17,15 +17,18 @@
           />
         </div>
         <div
-          class="relative top-[-30px] right-[-120px] w-[20px] h-[0] box-border"
+          class="relative top-[-30px] right-[-120px] w-[20px] cursor-pointer"
           v-if="!product.isLike"
+          @click="onClickLike(product.id)"
         >
           🤍
         </div>
 
         <div
-          class="relative top-[-30px] right-[-120px] w-[20px] h-[0] box-border"
+          class="relative top-[-30px] right-[-120px] w-[20px] cursor-pointer"
           v-if="product.isLike"
+          @click="onClickLike(product.id)"
+
         >
           ❤️
         </div>
@@ -79,8 +82,17 @@ export default {
   },
   data() {
     return {
-      product: data,
+      products: data,
     };
+  },
+  methods: {
+    onClickLike(productId) {
+      this.products?.forEach((product) => {
+        if(product.id === productId) {
+          product.isLike = !product.isLike 
+        }
+      })
+    }
   },
 };
 </script>
