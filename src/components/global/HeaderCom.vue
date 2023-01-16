@@ -6,7 +6,7 @@
       alt="button_back"
       src="../../assets/button_back.png"
     />
-    <div class="mx-auto">{{ title }}</div>
+    <div class="mx-auto text-[16px] font-bold">{{ title }}</div>
     <img
       class="w-[20px] h-[20px]"
       src="../../assets/glasses.png"

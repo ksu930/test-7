@@ -2,11 +2,11 @@
   <div
     class="border-gray-200 w-[360px] h-full min-h-screen flex flex-col box-border"
   >
-    <HeaderCom title="전체보기" />
+    <HeaderCom title="조리원몰" />
 
     <div class="flex w-full h-10 pl-5 text-sm">
       <div
-        class="flex items-center px-2 border-b-2"
+        class="flex items-center px-2 border-b-2 cursor-pointer"
         :class="
           subTitleClickState === 0
             ? 'font-bold text-beRed border-b-2 border-beRed'
@@ -17,7 +17,7 @@
         홈
       </div>
       <div
-        class="flex items-center h-full px-2 gap-1 border-b-2"
+        class="flex items-center h-full px-2 gap-1 border-b-2 cursor-pointer"
         :class="
           subTitleClickState === 1
             ? 'font-bold text-beRed border-b-2 border-beRed'
@@ -26,10 +26,10 @@
         @click="onClickTab(1)"
       >
         <div class="flex items-center h-full">한정수량</div>
-        <img class="w-[18px] h-[18px]" src="../../assets/new.webp" />
+        <img class="w-[18px] h-[18px]" src="../../assets/new.png" />
       </div>
       <div
-        class="flex items-center px-2 border-b-2"
+        class="flex items-center px-2 border-b-2 cursor-pointer"
         :class="
           subTitleClickState === 2
             ? 'font-bold text-beRed border-b-2 border-beRed'
@@ -40,7 +40,7 @@
         출산가방
       </div>
       <div
-        class="flex items-center px-2 gap-1 border-b-2"
+        class="flex items-center px-2 gap-1 border-b-2 cursor-pointer"
         :class="
           subTitleClickState === 3
             ? 'font-bold text-beRed border-b-2 border-beRed'
@@ -49,7 +49,7 @@
         @click="onClickTab(3)"
       >
         <div class="flex items-center h-full">혜택존</div>
-        <img class="w-[18px] h-[18px]" src="../../assets/new.webp" />
+        <img class="w-[18px] h-[18px]" src="../../assets/new.png" />
       </div>
     </div>
 
@@ -69,9 +69,9 @@
           >Slide 2</swiper-slide
         >
         <swiper-slide
-          class="h-full min-h-screen flex justify-center items-center bg-slate-400"
+          class="h-full min-h-screen flex justify-center items-center"
         >
-          <div class="w-full h-full min-h-screen box-border">aaaaaa</div>
+          <ProcreationBag />
         </swiper-slide>
         <swiper-slide
           class="h-full min-h-screen flex justify-center items-center bg-slate-400"
@@ -84,6 +84,7 @@
 
 <script>
 import HeaderCom from '../Global/HeaderCom.vue';
+import ProcreationBag from './ProcreationBag.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import { Autoplay } from 'swiper';
 import 'swiper/css';
@@ -91,6 +92,7 @@ import 'swiper/css';
 export default {
   components: {
     HeaderCom: HeaderCom,
+    ProcreationBag: ProcreationBag,
     Swiper,
     SwiperSlide,
   },
@@ -103,7 +105,6 @@ export default {
   },
   methods: {
     onSwiper(swiper) {
-      console.log(swiper);
       this.swipeRef = swiper;
     },
     onSlideChange(swiper) {
