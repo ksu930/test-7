@@ -6,7 +6,7 @@
       alt="button_back"
       src="../../assets/button_back.png"
     />
-    <div class="mx-auto">최근 들어온 상품</div>
+    <div class="mx-auto">{{ title }}</div>
     <img
       class="w-[20px] h-[20px]"
       src="../../assets/glasses.png"
@@ -21,5 +21,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    title: String,
+  },
+};
 </script>

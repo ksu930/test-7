@@ -22,7 +22,7 @@ export default [
     isLike: false,
   },
   {
-    id: 3,
+    id: 2,
     title: "테스트브랜드2",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
@@ -33,7 +33,7 @@ export default [
     isLike: false,
   },
   {
-    id: 4,
+    id: 3,
     title: "테스트브랜드4",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
@@ -44,7 +44,7 @@ export default [
     isLike: true,
   },
   {
-    id: 5,
+    id: 4,
     title: "테스트브랜드",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
@@ -53,23 +53,23 @@ export default [
     afterPrice: "29,000원",
     beforePrice: "20,000원",
     isLike: true,
+  },
+  {
+    id: 5,
+    title: "테스트브랜드2",
+    image:
+      "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
+    subTitle: "[1+1] 테스트 브랜드2",
+    discount: "20%",
+    afterPrice: "30,000원",
+    beforePrice: "33,000원",
+    isLike: false,
   },
   {
     id: 6,
     title: "테스트브랜드2",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
-    subTitle: "[1+1] 테스트 브랜드2",
-    discount: "20%",
-    afterPrice: "30,000원",
-    beforePrice: "33,000원",
-    isLike: false,
-  },
-  {
-    id: 7,
-    title: "테스트브랜드2",
-    image:
-      "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
     subTitle: "[1+2] 테스트 브랜드3",
     discount: "30%",
     afterPrice: "50,000원",
@@ -77,7 +77,7 @@ export default [
     isLike: false,
   },
   {
-    id: 8,
+    id: 7,
     title: "테스트브랜드4",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
@@ -88,7 +88,7 @@ export default [
     isLike: true,
   },
   {
-    id: 9,
+    id: 8,
     title: "테스트브랜드",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
@@ -97,23 +97,23 @@ export default [
     afterPrice: "29,000원",
     beforePrice: "20,000원",
     isLike: true,
+  },
+  {
+    id: 9,
+    title: "테스트브랜드2",
+    image:
+      "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
+    subTitle: "[1+1] 테스트 브랜드2",
+    discount: "20%",
+    afterPrice: "30,000원",
+    beforePrice: "33,000원",
+    isLike: false,
   },
   {
     id: 10,
     title: "테스트브랜드2",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
-    subTitle: "[1+1] 테스트 브랜드2",
-    discount: "20%",
-    afterPrice: "30,000원",
-    beforePrice: "33,000원",
-    isLike: false,
-  },
-  {
-    id: 11,
-    title: "테스트브랜드2",
-    image:
-      "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
     subTitle: "[1+2] 테스트 브랜드3",
     discount: "30%",
     afterPrice: "50,000원",
@@ -121,7 +121,7 @@ export default [
     isLike: false,
   },
   {
-    id: 12,
+    id: 11,
     title: "테스트브랜드4",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
@@ -132,7 +132,7 @@ export default [
     isLike: true,
   },
   {
-    id: 13,
+    id: 12,
     title: "테스트브랜드",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
@@ -143,7 +143,7 @@ export default [
     isLike: true,
   },
   {
-    id: 14,
+    id: 13,
     title: "테스트브랜드2",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
@@ -154,7 +154,7 @@ export default [
     isLike: false,
   },
   {
-    id: 15,
+    id: 14,
     title: "테스트브랜드2",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
@@ -165,7 +165,7 @@ export default [
     isLike: false,
   },
   {
-    id: 16,
+    id: 15,
     title: "테스트브랜드4",
     image:
       "https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg",
