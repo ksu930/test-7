@@ -26,7 +26,7 @@
         @click="onClickTab(1)"
       >
         <div class="flex items-center h-full">한정수량</div>
-        <img class="w-[18px] h-[18px]" src="../assets/new.webp" />
+        <img class="w-[18px] h-[18px]" src="../../assets/new.webp" />
       </div>
       <div
         class="flex items-center px-2 border-b-2"
@@ -49,28 +49,30 @@
         @click="onClickTab(3)"
       >
         <div class="flex items-center h-full">혜택존</div>
-        <img class="w-[18px] h-[18px]" src="../assets/new.webp" />
+        <img class="w-[18px] h-[18px]" src="../../assets/new.webp" />
       </div>
     </div>
 
     <div class="w-full h-full min-h-screen">
       <swiper
-        class="mySwiper h-full min-h-screen"
+        class="mySwiper h-full min-h-screen w-full"
+        :modules="modules"
         @swiper="onSwiper"
         @slideChange="onSlideChange"
       >
         <swiper-slide
-          class="h-full min-h-screen flex justify-center items-center bg-slate-400"
-          >Slide 1</swiper-slide
-        >
+          class="h-full min-h-screen w-full flex justify-center items-center bg-slate-400"
+          >Slide 1
+        </swiper-slide>
         <swiper-slide
           class="h-full min-h-screen flex justify-center items-center bg-slate-400"
           >Slide 2</swiper-slide
         >
         <swiper-slide
           class="h-full min-h-screen flex justify-center items-center bg-slate-400"
-          >Slide 3</swiper-slide
         >
+          <div class="w-full h-full min-h-screen box-border">aaaaaa</div>
+        </swiper-slide>
         <swiper-slide
           class="h-full min-h-screen flex justify-center items-center bg-slate-400"
           >Slide 4</swiper-slide
@@ -81,9 +83,11 @@
 </template>
 
 <script>
-import HeaderCom from './global/HeaderCom.vue';
+import HeaderCom from '../Global/HeaderCom.vue';
 import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay } from 'swiper';
 import 'swiper/css';
+
 export default {
   components: {
     HeaderCom: HeaderCom,
@@ -93,12 +97,13 @@ export default {
   data() {
     return {
       subTitleClickState: 0,
-      isTest: true,
       swipeRef: null,
+      modules: [Autoplay],
     };
   },
   methods: {
     onSwiper(swiper) {
+      console.log(swiper);
       this.swipeRef = swiper;
     },
     onSlideChange(swiper) {

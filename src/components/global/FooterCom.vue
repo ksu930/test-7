@@ -1,10 +1,10 @@
 <template>
-  <div class="flex justify-evenly gap-2 box-border">
+  <div class="flex justify-evenly gap-2 box-border text-sm">
     <div
       class="border-black border-2 cursor-pointer"
       @click="$router.push('/recentproduct')"
     >
-      Home
+      RecentProduvt
     </div>
     <div
       class="border-black border-2 cursor-pointer"

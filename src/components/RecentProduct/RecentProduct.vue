@@ -73,8 +73,8 @@
 </template>
 
 <script>
-import HeaderCom from './global/HeaderCom.vue';
-import data from '../assets/data';
+import HeaderCom from '../Global/HeaderCom.vue';
+import data from '../../assets/data';
 export default {
   components: {
     HeaderCom: HeaderCom,
