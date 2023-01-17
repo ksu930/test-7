@@ -21,7 +21,7 @@
           v-if="!product.isLike"
           @click="onClickLike(product.id)"
         >
-          🤍
+          🤍df
         </div>
 
         <div
