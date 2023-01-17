@@ -37,7 +37,7 @@ export default [
     title: '브랜드4',
     image:
       'https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg',
-    subTitle: '[41+1] 테스트 브랜드4',
+    subTitle: '[41+1] 테스트 브랜드',
     discount: 50,
     afterPrice: 60000,
     beforePrice: 30000,
@@ -81,7 +81,7 @@ export default [
     title: '브랜드8',
     image:
       'https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg',
-    subTitle: '[41+1] 테스트 브랜드4',
+    subTitle: '[41+1] 테스트 브랜드',
     discount: 50,
     afterPrice: 60000,
     beforePrice: 30000,
@@ -100,7 +100,7 @@ export default [
   },
   {
     id: 9,
-    title: '브랜드10',
+    title: '브랜드1',
     image:
       'https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg',
     subTitle: '[1+1] 테스트 브랜드2',
@@ -111,7 +111,7 @@ export default [
   },
   {
     id: 10,
-    title: '브랜드11',
+    title: '브랜드1',
     image:
       'https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg',
     subTitle: '[1+2] 테스트 브랜드3',
@@ -122,10 +122,10 @@ export default [
   },
   {
     id: 11,
-    title: '브랜드12',
+    title: '브랜드1',
     image:
       'https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg',
-    subTitle: '[41+1] 테스트 브랜드4',
+    subTitle: '[41+1] 테스트 브랜드',
     discount: 50,
     afterPrice: 60000,
     beforePrice: 30000,
@@ -133,7 +133,7 @@ export default [
   },
   {
     id: 12,
-    title: '브랜드13',
+    title: '브랜드1',
     image:
       'https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg',
     subTitle: '[1+1] 테스트 브랜드',
@@ -144,7 +144,7 @@ export default [
   },
   {
     id: 13,
-    title: '브랜드14',
+    title: '브랜드1',
     image:
       'https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg',
     subTitle: '[1+1] 테스트 브랜드2',
@@ -155,7 +155,7 @@ export default [
   },
   {
     id: 14,
-    title: '브랜드15',
+    title: '브랜드1',
     image:
       'https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg',
     subTitle: '[1+2] 테스트 브랜드3',
@@ -166,10 +166,10 @@ export default [
   },
   {
     id: 15,
-    title: '브랜드16',
+    title: '브랜드1',
     image:
       'https://user-images.githubusercontent.com/113888184/212007995-3279b221-b87a-4cb1-a550-a0683c34b031.jpg',
-    subTitle: '[41+1] 테스트 브랜드4',
+    subTitle: '[41+1] 테스트 브랜드',
     discount: 50,
     afterPrice: 60000,
     beforePrice: 30000,

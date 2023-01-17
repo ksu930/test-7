@@ -8,9 +8,9 @@
     </div>
     <div
       class="border-black border-2 cursor-pointer"
-      @click="$router.push('/search')"
+      @click="$router.push('/caremall')"
     >
-      Search
+      조리원몰
     </div>
     <div
       class="border-black border-2 cursor-pointer"

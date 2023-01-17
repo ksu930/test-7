@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeCom from '../components/HomeCom.vue';
-import SearchCom from '../components/Search/SearchCom.vue';
+import CareMallCom from '../components/CareMall/CareMallCom.vue';
 import MallCom from '../components/Mall/MallCom.vue';
 import EventCom from '../components/Event/EventCom.vue';
 import MyPageCom from '../components/Mypage/MyPageCom.vue';
@@ -15,9 +15,9 @@ const router = createRouter({
       component: HomeCom,
     },
     {
-      path: '/search',
-      name: 'search',
-      component: SearchCom,
+      path: '/caremall',
+      name: 'caremall',
+      component: () => import('../components/CareMall/CareMallCom.vue'),
     },
     {
       path: '/mall',
