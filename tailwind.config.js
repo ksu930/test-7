@@ -1,20 +1,27 @@
 module.exports = {
-  content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Noto Sans KR"],
-        karla: ["Karla"],
-        salonica: ["Salonica"],
+        sans: ['Noto Sans KR'],
+        karla: ['Karla'],
+        salonica: ['Salonica'],
       },
       colors: {
-        primary: "#20d28c",
-        beBlue: "#468cf0",
-        beGray: "#767676",
-        beGray2: "#909090",
-        beGray3: "#eceff2",
-        beLightGray: "#21cb81",
-        beRed: "#fa5a5a",
+        primary: '#20d28c',
+        beBlue: '#468cf0',
+        beGray: '#767676',
+        beGray2: '#909090',
+        beGray3: '#eceff2',
+        beGray4: '#999999',
+        beLightGray: '#21cb81',
+        beRed: '#fa5a5a',
+        beRed2: '#ffc3c3',
+        beMiddleRed: '#ffdbdb',
+        beLightRed: '#fff7f7',
+      },
+      transitionProperty: {
+        materials: '3000ms',
       },
     },
   },

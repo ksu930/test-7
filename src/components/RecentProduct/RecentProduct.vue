@@ -43,13 +43,13 @@
             class="flex flex-row gap-[4px] mt-[2px] text-sm tracking-[-0.3px] text-beGray2 box-border"
           >
             <div class="font-bold text-beRed box-border">
-              {{ product.discount }}
+              {{ product.discount }}%
             </div>
-            <div>{{ product.afterPrice }}</div>
+            <div>{{ product.afterPrice }}원</div>
             <div
               class="font-bold text-[10px] text-beGray2 line-through box-border"
             >
-              {{ product.beforePrice }}
+              {{ product.beforePrice }}원
             </div>
           </div>
           <div
