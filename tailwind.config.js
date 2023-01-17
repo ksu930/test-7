@@ -16,6 +16,7 @@ module.exports = {
         beGray4: '#999999',
         beLightGray: '#21cb81',
         beRed: '#fa5a5a',
+        beRed2: '#ffc3c3',
         beMiddleRed: '#ffdbdb',
         beLightRed: '#fff7f7',
       },
