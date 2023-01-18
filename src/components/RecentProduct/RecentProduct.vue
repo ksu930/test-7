@@ -45,11 +45,11 @@
             <div class="font-bold text-beRed box-border">
               {{ product.discount }}%
             </div>
-            <div>{{ product.afterPrice }}원</div>
+            <div>{{ product.afterPrice.toLocaleString() }}원</div>
             <div
               class="font-bold text-[10px] text-beGray2 line-through box-border"
             >
-              {{ product.beforePrice }}원
+              {{ product.beforePrice.toLocaleString() }}원
             </div>
           </div>
           <div
@@ -75,13 +75,14 @@
 <script>
 import HeaderCom from '../Global/HeaderCom.vue';
 import data from '../../assets/data';
+import api from '../../api/api';
 export default {
   components: {
     HeaderCom: HeaderCom,
   },
   data() {
     return {
-      products: data,
+      products: [],
       isBoolean: true,
     };
   },
@@ -92,13 +93,17 @@ export default {
           product.isLike = !product.isLike;
           return false;
         }
-        let i = 1;
-        console.log(i);
-        i++;
       });
       // let index = this.products.findIndex((product) => product.id === id);
       // this.products[index].isLike = !this.products[index].isLike;
     },
+    async getData() {
+      let { data } = await api.get('/users');
+      this.products = data.data;
+    },
+  },
+  created() {
+    this.getData();
   },
 };
 </script>
