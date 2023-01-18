@@ -5,6 +5,8 @@ import router from './router';
 // import './assets/main.css'
 import './index.css';
 
+import './registerServiceWorker'
+
 const app = createApp(App);
 
 app.use(router);
